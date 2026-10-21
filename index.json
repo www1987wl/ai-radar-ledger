@@ -1,0 +1,468 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-21T17:16:07",
+  "system": {
+    "name": "ai-radar",
+    "what": "一个自动运行的 AI 情报循环：采集 → 分析 → 做出可结算的预测 → 按现实结果淘汰或保留自己的配置。",
+    "generation": 1,
+    "born_at": "2026-10-16"
+  },
+  "fitness": {
+    "value": 0.6306,
+    "formula_version": 2,
+    "window_days": 7,
+    "sufficient": true,
+    "components": {
+      "deep_rate": 0.5365,
+      "verify_rate": 0.9713,
+      "calibration": 0.84,
+      "calibration_source": "window",
+      "cost_index": 0.737,
+      "calls_per_item": 0.737
+    },
+    "weights": {
+      "deep_rate": 0.3,
+      "verify_rate": 0.3,
+      "calibration": 0.3,
+      "cost": 0.1
+    },
+    "counts": {
+      "items": 1152,
+      "extracted": 618,
+      "claims": 2301,
+      "claims_verified": 2235,
+      "llm_calls": 849,
+      "llm_ok": 848,
+      "pred_resolved_window": 2,
+      "avg_brier_window": 0.16000000000000003,
+      "pred_resolved_all": 2,
+      "avg_brier_all": 0.16000000000000003,
+      "pred_open": 639
+    }
+  },
+  "generations": [
+    {
+      "gen": 0,
+      "parent_gen": null,
+      "status": "kept",
+      "born_at": "2026-10-16T19:31:11+08:00",
+      "evaluated_at": "2026-10-16T19:38:53+08:00",
+      "fitness": 0.5661,
+      "window_days": 7,
+      "note": "genesis — 手工基线，未变异 | 基线代，无父代可比。记录为基准。 | 按 v2 公式重算（旧值 0.5285）",
+      "mutations": []
+    },
+    {
+      "gen": 1,
+      "parent_gen": 0,
+      "status": "active",
+      "born_at": "2026-10-16T19:38:59+08:00",
+      "evaluated_at": null,
+      "fitness": null,
+      "window_days": 7,
+      "note": "up google-research（高价值源（0.744），提高取回上限）；down marginalrevolution（低价值源（0.344），降低取回上限）",
+      "mutations": [
+        {
+          "kind": "up",
+          "source_id": "google-research",
+          "field": "params.max_items",
+          "to": 19,
+          "reason": "高价值源（0.744），提高取回上限"
+        },
+        {
+          "kind": "down",
+          "source_id": "marginalrevolution",
+          "field": "params.max_items",
+          "to": 11,
+          "reason": "低价值源（0.344），降低取回上限"
+        }
+      ]
+    }
+  ],
+  "predictions": {
+    "summary": {
+      "resolved": 2,
+      "open": 639,
+      "mean_brier": 0.16,
+      "calibration": 0.84,
+      "open_published": 50,
+      "open_limit": 50
+    },
+    "resolved": [
+      {
+        "id": 35,
+        "statement": "Meta将在2025年内宣布更多数据或标注相关收购/合作以补强基础模型。",
+        "probability": 0.6,
+        "resolve_by": "2025-12-31",
+        "outcome": "true",
+        "brier": 0.16000000000000003,
+        "created_at": "2026-10-16T00:34:50+08:00",
+        "resolved_at": "2026-10-19T18:39:00+08:00",
+        "resolver": "agent:manual"
+      },
+      {
+        "id": 310,
+        "statement": "一年内将有 AI 系统在 IMO 达到金牌水平或等效成绩。",
+        "probability": 0.6,
+        "resolve_by": "2025-07-25",
+        "outcome": "true",
+        "brier": 0.16000000000000003,
+        "created_at": "2026-10-16T19:28:20+08:00",
+        "resolved_at": "2026-10-19T18:39:00+08:00",
+        "resolver": "agent:manual"
+      }
+    ],
+    "open_recent": [
+      {
+        "id": 641,
+        "statement": "到2027-06-30前，至少一个主流开源agent框架（如LangChain、LlamaIndex、AutoGen）会在其追踪或日志功能中提供记录被拒绝/未使用输入的显式字段或API。",
+        "probability": 0.4,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:45:07+08:00"
+      },
+      {
+        "id": 640,
+        "statement": "迪士尼将在2027-04-30前公开确认完成对Character.AI部分资产的收购交割。",
+        "probability": 0.6,
+        "resolve_by": "2027-04-30",
+        "created_at": "2026-10-19T06:44:36+08:00"
+      },
+      {
+        "id": 639,
+        "statement": "到2027-10-18前，将出现至少一起公开报道的、由AI智能体参与的关键基础设施或金融机构重大网络入侵事件。",
+        "probability": 0.55,
+        "resolve_by": "2027-10-18",
+        "created_at": "2026-10-19T06:44:30+08:00"
+      },
+      {
+        "id": 637,
+        "statement": "Citrini Research将在2027-04-17前发布后续报告或公开评论，进一步细化代币化收益归属的分析。",
+        "probability": 0.4,
+        "resolve_by": "2027-04-17",
+        "created_at": "2026-10-19T06:44:25+08:00"
+      },
+      {
+        "id": 638,
+        "statement": "Grayscale将在2027-04-17前发布公开研究内容，重申持有承载RWA的底层网络是代币化趋势的直接敞口。",
+        "probability": 0.45,
+        "resolve_by": "2027-04-17",
+        "created_at": "2026-10-19T06:44:25+08:00"
+      },
+      {
+        "id": 635,
+        "statement": "富国银行将在2027年底前公开披露其代币化存款跨境支付交易量或覆盖国家数量的增长数据。",
+        "probability": 0.5,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-19T06:44:19+08:00"
+      },
+      {
+        "id": 636,
+        "statement": "高盛将在2027年底前宣布扩大使用DTCC代币化服务至更大规模的具体项目。",
+        "probability": 0.55,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-19T06:44:19+08:00"
+      },
+      {
+        "id": 634,
+        "statement": "Ironheights将在2026-12-31前发布带canary语料或重扫计划的ClawHub扫描更新",
+        "probability": 0.4,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:44:03+08:00"
+      },
+      {
+        "id": 632,
+        "statement": "DeepSeek 将在 2026-12-31 前发布 V4.1-Flash-1017 在公开基准（如 SWE-bench 或 AIME）上的具体分数对比，并被第三方媒体复现引用",
+        "probability": 0.45,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:43:57+08:00"
+      },
+      {
+        "id": 633,
+        "statement": "Meta 将在 2026-12-31 前就商业账号内容抓取条款发布补充说明或增设某种退出/申诉机制",
+        "probability": 0.4,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:43:57+08:00"
+      },
+      {
+        "id": 630,
+        "statement": "DeepSeek官方Search API在2026年11月1日免费期结束后将按每千次成功请求5元计费，可在DeepSeek API文档价格页核验",
+        "probability": 0.7,
+        "resolve_by": "2026-11-15",
+        "created_at": "2026-10-19T06:43:51+08:00"
+      },
+      {
+        "id": 631,
+        "statement": "DeepSeek将在2026年12月31日前发布V4.1-Flash-1017之后的又一版本快照，可在HuggingFace deepseek-ai组织页核验",
+        "probability": 0.55,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:43:51+08:00"
+      },
+      {
+        "id": 629,
+        "statement": "Marginal Revolution 将在 2027-04-18 前再发布至少一篇 Emergent Ventures 资助批次文章，涉及 AI 与科学发现交叉方向",
+        "probability": 0.55,
+        "resolve_by": "2027-04-18",
+        "created_at": "2026-10-19T06:43:39+08:00"
+      },
+      {
+        "id": 628,
+        "statement": "到2027-06-30前，至少一个主流邮件代理框架（如 LangChain 或同类公开项目）将发布调度队列级撤销/刹车功能",
+        "probability": 0.4,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:43:30+08:00"
+      },
+      {
+        "id": 626,
+        "statement": "智谱将在2027-04-30前公开GLM-Legal Beta的律所试用反馈或更新版本评测成绩。",
+        "probability": 0.6,
+        "resolve_by": "2027-04-30",
+        "created_at": "2026-10-19T06:43:22+08:00"
+      },
+      {
+        "id": 627,
+        "statement": "Harvey将在2027-04-30前发布基于开源底座的新法律模型或更新Tenet评测结果。",
+        "probability": 0.45,
+        "resolve_by": "2027-04-30",
+        "created_at": "2026-10-19T06:43:22+08:00"
+      },
+      {
+        "id": 625,
+        "statement": "Anthropic 将在 2027-06-30 前公开发布或联合律所发布关于 AI 代理谈判行为的规范文件或政策说明",
+        "probability": 0.55,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:43:15+08:00"
+      },
+      {
+        "id": 624,
+        "statement": "到 2027-04-30 前，至少一个主流 AI 编码代理产品（如 GitHub Copilot、Cursor 或 Claude Code）公开推出推送前理解测验或类似人工确认机制",
+        "probability": 0.35,
+        "resolve_by": "2027-04-30",
+        "created_at": "2026-10-19T06:43:07+08:00"
+      },
+      {
+        "id": 623,
+        "statement": "在2027-06-30前，至少再有一家德国法院在裁决中援引慕尼黑地方法院I关于AI概览构成Google自身言论的推理",
+        "probability": 0.55,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:43:01+08:00"
+      },
+      {
+        "id": 622,
+        "statement": "Moltbook 上将有至少一篇后续帖子公开说明 prowl.world MCP 基准器已改为在评分前拒绝未测量样本（如引入 Measured/Unmeasured 类型或拒绝率字段）",
+        "probability": 0.45,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:42:46+08:00"
+      },
+      {
+        "id": 621,
+        "statement": "ClawHub或同类AI技能市场将在2027年前推出官方技能安全扫描或授权额度审查机制",
+        "probability": 0.45,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:42:40+08:00"
+      },
+      {
+        "id": 619,
+        "statement": "OpenBMB将在2027-04-17前发布PilotDeck的后续版本（版本号高于2.0）并在其GitHub仓库公开Release说明",
+        "probability": 0.6,
+        "resolve_by": "2027-04-17",
+        "created_at": "2026-10-19T06:42:35+08:00"
+      },
+      {
+        "id": 620,
+        "statement": "清华大学THUNLP或OpenBMB将在2027-04-17前公开PilotDeck在第三方基准（非Workbuddy Bench）上的评测结果",
+        "probability": 0.4,
+        "resolve_by": "2027-04-17",
+        "created_at": "2026-10-19T06:42:35+08:00"
+      },
+      {
+        "id": 618,
+        "statement": "the-decoder 将在 2027-01-31 前发表至少一篇跟进报道，披露该实验所用具体模型名称或研究者身份。",
+        "probability": 0.4,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-10-19T06:42:29+08:00"
+      },
+      {
+        "id": 617,
+        "statement": "the-decoder 将在 2027-04-18 前报道至少一个在 Taste-Bench 上正确率超过 70% 的 AI 模型或方法",
+        "probability": 0.4,
+        "resolve_by": "2027-04-18",
+        "created_at": "2026-10-19T06:42:24+08:00"
+      },
+      {
+        "id": 616,
+        "statement": "Anthropic 将在2027-04-30前公开其public benefit fund的治理结构与决策机制细节。",
+        "probability": 0.6,
+        "resolve_by": "2027-04-30",
+        "created_at": "2026-10-19T06:42:19+08:00"
+      },
+      {
+        "id": 615,
+        "statement": "tanod 将在其公开渠道说明放弃按次付费后的替代变现模式（订阅/授权/广告等其一）",
+        "probability": 0.6,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-10-19T06:42:14+08:00"
+      },
+      {
+        "id": 614,
+        "statement": "到2027年底前，至少一篇公开论文或预印本会在参数量超过10亿的语言模型上复现训练数据标记注入并报告标记输出率。",
+        "probability": 0.35,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-19T06:42:09+08:00"
+      },
+      {
+        "id": 613,
+        "statement": "腾讯将在 2026-12-31 前发布 tencent/Hy-Memory-30B-A3B 的技术报告或基准评测，公开说明其记忆机制。",
+        "probability": 0.45,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-19T06:42:03+08:00"
+      },
+      {
+        "id": 612,
+        "statement": "DeepSeek 将在 2027-04-18 前公开宣布其 Search API 支持结果缓存或批量请求以降低重复检索成本",
+        "probability": 0.35,
+        "resolve_by": "2027-04-18",
+        "created_at": "2026-10-19T06:41:54+08:00"
+      },
+      {
+        "id": 611,
+        "statement": "Google DeepMind将在2027年6月前发布关于Gemini 4 Argon多智能体通关Minecraft的官方技术报告或论文",
+        "probability": 0.7,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-19T06:41:48+08:00"
+      },
+      {
+        "id": 610,
+        "statement": "到 2027 年底，主流 agent 框架（如 LangChain、LlamaIndex、Microsoft AutoGen）将至少有一个在官方文档中把失败轨迹追踪或可审计回执列为默认内置能力",
+        "probability": 0.55,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-18T06:48:19+08:00"
+      },
+      {
+        "id": 609,
+        "statement": "Moltbook 将在 2027-01-31 前为 /home 或帖子接口增加明确的新鲜度/更新时间字段或源列表直读说明",
+        "probability": 0.4,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-10-18T06:48:13+08:00"
+      },
+      {
+        "id": 608,
+        "statement": "到2027年底，至少一家主流公有云将推出面向AI agent的免控制台自助工作负载身份引导流程",
+        "probability": 0.5,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-18T06:47:41+08:00"
+      },
+      {
+        "id": 607,
+        "statement": "Moltbook 或 ClawHub 将在 2027-01-31 前公开披露针对跳过审批类技能的清理或审批门禁机制",
+        "probability": 0.4,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-10-18T06:47:28+08:00"
+      },
+      {
+        "id": 605,
+        "statement": "到2028年美国大选前，至少一家美国前沿AI实验室公开宣布因安全理由不对外发布其最强模型",
+        "probability": 0.45,
+        "resolve_by": "2028-11-07",
+        "created_at": "2026-10-18T06:47:24+08:00"
+      },
+      {
+        "id": 606,
+        "statement": "到2028年美国大选前，美国官方就业统计报告中出现被公开归因于AI的显著岗位替代数据",
+        "probability": 0.4,
+        "resolve_by": "2028-11-07",
+        "created_at": "2026-10-18T06:47:24+08:00"
+      },
+      {
+        "id": 604,
+        "statement": "到2027年底，至少一个主流agent支付或身份协议将引入独立的「付款人授权/支出上限」字段或规范",
+        "probability": 0.5,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-18T06:46:30+08:00"
+      },
+      {
+        "id": 603,
+        "statement": "卡内基梅隆大学或微软将在2027年前公开披露该联合培训项目的课程内容或参与人数",
+        "probability": 0.5,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-18T06:46:17+08:00"
+      },
+      {
+        "id": 602,
+        "statement": "到2027-06-30前，至少一个主流agent框架或审计工具将公开支持记录签署的争议/拒绝事件作为信用证据的一部分",
+        "probability": 0.4,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-18T06:45:30+08:00"
+      },
+      {
+        "id": 601,
+        "statement": "到 2027 年，主流 agent 工具框架（如 LangChain、LlamaIndex）将默认提供每任务工具调用计数与成本日志功能",
+        "probability": 0.55,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-18T06:45:16+08:00"
+      },
+      {
+        "id": 600,
+        "statement": "OpenCode 将在 2026-11-17 前发布该安全事件的公开事后报告（postmortem）",
+        "probability": 0.55,
+        "resolve_by": "2026-11-17",
+        "created_at": "2026-10-18T06:45:10+08:00"
+      },
+      {
+        "id": 599,
+        "statement": "Meta将在2027年1月31日前再次修改商业条款中涉及内容用于AI训练的表述，并被TechCrunch或The Verge等公开报道。",
+        "probability": 0.4,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-10-18T06:45:02+08:00"
+      },
+      {
+        "id": 598,
+        "statement": "Anthropic将在2026-12-31前就泄露法案公开回应或澄清立场",
+        "probability": 0.6,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-18T06:44:57+08:00"
+      },
+      {
+        "id": 596,
+        "statement": "Meta将在2026年12月31日前发布Muse Spark系列新版本或更新其智能体评测成绩",
+        "probability": 0.5,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-18T06:44:52+08:00"
+      },
+      {
+        "id": 597,
+        "statement": "Reflection将在2026年12月31日前发布Beam系列后续版本并改善Terminal-Bench成绩",
+        "probability": 0.4,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-18T06:44:52+08:00"
+      },
+      {
+        "id": 595,
+        "statement": "到 2027 年，主流 agent 框架将默认提供历史压缩或引用式上下文传递机制",
+        "probability": 0.55,
+        "resolve_by": "2027-06-30",
+        "created_at": "2026-10-18T06:44:37+08:00"
+      },
+      {
+        "id": 594,
+        "statement": "Moltbook 将在2026-12-31前公开说明该 agent 指令摘要覆盖事件的处置措施或平台规则更新。",
+        "probability": 0.35,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-10-18T06:44:23+08:00"
+      },
+      {
+        "id": 593,
+        "statement": "ClawHub将在2027-04-17前发布或更新技能安全规范，明确禁止技能要求agent将明文API密钥写入记忆。",
+        "probability": 0.35,
+        "resolve_by": "2027-04-17",
+        "created_at": "2026-10-18T06:44:09+08:00"
+      },
+      {
+        "id": 591,
+        "statement": "到2027年底，中国将发布至少一项针对世界模型的国家或行业标准正式稿",
+        "probability": 0.6,
+        "resolve_by": "2027-12-31",
+        "created_at": "2026-10-18T06:44:04+08:00"
+      }
+    ]
+  }
+}
