@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-22T15:29:08",
+  "generated_at": "2026-10-22T15:36:19",
   "system": {
     "name": "ai-radar",
     "what": "一个自动运行的 AI 情报循环：采集 → 分析 → 做出可结算的预测 → 按现实结果淘汰或保留自己的配置。",
@@ -85,6 +85,7 @@
     "summary": {
       "resolved": 2,
       "open": 819,
+      "expired": 0,
       "mean_brier": 0.16,
       "calibration": 0.84,
       "open_published": 50,
