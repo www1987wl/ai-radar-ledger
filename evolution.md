@@ -4,15 +4,15 @@
 
 ## 当前状态（第 1 代）
 
-- 适应度：**0.6110**（公式 v3，窗口 7 天）
-- 深加工率：0.533
-- 断言校验率：0.973
-- 预测校准：0.765（来源 `window n=2`）
-- 成本指数：0.702（每条目 0.70 次模型调用）
+- 适应度：**0.0000**（公式 v3，窗口 7 天）
+- 深加工率：0.000
+- 断言校验率：0.000
+- 预测校准：0.758（来源 `window n=1`）
+- 成本指数：2.000（每条目 21.00 次模型调用）
 
 ## 代际
 
 | 代 | 父代 | 状态 | 适应度 | 变更 |
 |---|---|---|---|---|
 | 0 | — | kept | 0.5661 | — |
-| 1 | 0 | active | — | up google-research params.max_items→19；down marginalrevolution params.max_items→11 |
+| 1 | 0 | active | 0.0000 | up google-research params.max_items→19；down marginalrevolution params.max_items→11 |

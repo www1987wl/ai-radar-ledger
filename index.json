@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-22T15:36:19",
+  "generated_at": "2026-11-02T07:32:33",
   "system": {
     "name": "ai-radar",
     "what": "一个自动运行的 AI 情报循环：采集 → 分析 → 做出可结算的预测 → 按现实结果淘汰或保留自己的配置。",
@@ -8,19 +8,19 @@
     "born_at": "2026-10-16"
   },
   "fitness": {
-    "value": 0.611,
+    "value": 0.0,
     "formula_version": 3,
     "window_days": 7,
-    "sufficient": true,
+    "sufficient": false,
     "components": {
-      "deep_rate": 0.5328,
-      "verify_rate": 0.9728,
-      "calibration": 0.765,
+      "deep_rate": 0.0,
+      "verify_rate": 0.0,
+      "calibration": 0.7582,
       "calibration_raw": 0.84,
-      "calibration_n": 2,
-      "calibration_source": "window n=2",
-      "cost_index": 0.7022,
-      "calls_per_item": 0.7022
+      "calibration_n": 1,
+      "calibration_source": "window n=1",
+      "cost_index": 2.0,
+      "calls_per_item": 21.0
     },
     "weights": {
       "deep_rate": 0.3,
@@ -29,17 +29,17 @@
       "cost": 0.1
     },
     "counts": {
-      "items": 1706,
-      "extracted": 909,
-      "claims": 3450,
-      "claims_verified": 3356,
-      "llm_calls": 1198,
-      "llm_ok": 1197,
-      "pred_resolved_window": 2,
+      "items": 0,
+      "extracted": 0,
+      "claims": 0,
+      "claims_verified": 0,
+      "llm_calls": 21,
+      "llm_ok": 21,
+      "pred_resolved_window": 1,
       "avg_brier_window": 0.16000000000000003,
-      "pred_resolved_all": 2,
+      "pred_resolved_all": 3,
       "avg_brier_all": 0.16000000000000003,
-      "pred_open": 819
+      "pred_open": 818
     }
   },
   "generations": [
@@ -59,8 +59,8 @@
       "parent_gen": 0,
       "status": "active",
       "born_at": "2026-10-16T19:38:59+08:00",
-      "evaluated_at": null,
-      "fitness": null,
+      "evaluated_at": "2026-11-02T07:32:33+08:00",
+      "fitness": 0.0,
       "window_days": 7,
       "note": "up google-research（高价值源（0.744），提高取回上限）；down marginalrevolution（低价值源（0.344），降低取回上限）",
       "mutations": [
@@ -83,8 +83,8 @@
   ],
   "predictions": {
     "summary": {
-      "resolved": 2,
-      "open": 819,
+      "resolved": 3,
+      "open": 818,
       "expired": 0,
       "mean_brier": 0.16,
       "calibration": 0.84,
@@ -92,6 +92,17 @@
       "open_limit": 50
     },
     "resolved": [
+      {
+        "id": 112,
+        "statement": "将出现至少一个基于该模型的第三方微调或量化版本。",
+        "probability": 0.6,
+        "resolve_by": "2026-10-15",
+        "outcome": "true",
+        "brier": 0.16000000000000003,
+        "created_at": "2026-10-16T06:44:37+08:00",
+        "resolved_at": "2026-11-02T07:32:32+08:00",
+        "resolver": "auto:local"
+      },
       {
         "id": 35,
         "statement": "Meta将在2025年内宣布更多数据或标注相关收购/合作以补强基础模型。",
