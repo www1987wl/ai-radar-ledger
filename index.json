@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T07:32:33",
+  "generated_at": "2026-11-09T07:32:44",
   "system": {
     "name": "ai-radar",
     "what": "一个自动运行的 AI 情报循环：采集 → 分析 → 做出可结算的预测 → 按现实结果淘汰或保留自己的配置。",
@@ -15,10 +15,10 @@
     "components": {
       "deep_rate": 0.0,
       "verify_rate": 0.0,
-      "calibration": 0.7582,
+      "calibration": 0.7708,
       "calibration_raw": 0.84,
-      "calibration_n": 1,
-      "calibration_source": "window n=1",
+      "calibration_n": 3,
+      "calibration_source": "all_time n=3",
       "cost_index": 2.0,
       "calls_per_item": 21.0
     },
@@ -35,8 +35,8 @@
       "claims_verified": 0,
       "llm_calls": 21,
       "llm_ok": 21,
-      "pred_resolved_window": 1,
-      "avg_brier_window": 0.16000000000000003,
+      "pred_resolved_window": 0,
+      "avg_brier_window": null,
       "pred_resolved_all": 3,
       "avg_brier_all": 0.16000000000000003,
       "pred_open": 818
@@ -59,7 +59,7 @@
       "parent_gen": 0,
       "status": "active",
       "born_at": "2026-10-16T19:38:59+08:00",
-      "evaluated_at": "2026-11-02T07:32:33+08:00",
+      "evaluated_at": "2026-11-09T07:32:43+08:00",
       "fitness": 0.0,
       "window_days": 7,
       "note": "up google-research（高价值源（0.744），提高取回上限）；down marginalrevolution（低价值源（0.344），降低取回上限）",
