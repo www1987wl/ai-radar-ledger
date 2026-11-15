@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-11T03:01:32",
+  "generated_at": "2026-11-16T07:33:17",
   "system": {
     "name": "ai-radar",
     "what": "一个自动运行的 AI 情报循环：采集 → 分析 → 做出可结算的预测 → 按现实结果淘汰或保留自己的配置。",
@@ -8,19 +8,19 @@
     "born_at": "2026-11-09"
   },
   "fitness": {
-    "value": 0.6007,
+    "value": 0.6117,
     "formula_version": 3,
     "window_days": 7,
     "sufficient": true,
     "components": {
-      "deep_rate": 0.5034,
-      "verify_rate": 0.9565,
+      "deep_rate": 0.5285,
+      "verify_rate": 0.9652,
       "calibration": 0.7708,
       "calibration_raw": 0.84,
       "calibration_n": 3,
       "calibration_source": "all_time n=3",
-      "cost_index": 0.6849,
-      "calls_per_item": 0.6849
+      "cost_index": 0.6763,
+      "calls_per_item": 0.6763
     },
     "weights": {
       "deep_rate": 0.3,
@@ -29,17 +29,17 @@
       "cost": 0.1
     },
     "counts": {
-      "items": 584,
-      "extracted": 294,
-      "claims": 1034,
-      "claims_verified": 989,
-      "llm_calls": 400,
-      "llm_ok": 400,
+      "items": 1875,
+      "extracted": 991,
+      "claims": 3621,
+      "claims_verified": 3495,
+      "llm_calls": 1268,
+      "llm_ok": 1268,
       "pred_resolved_window": 0,
       "avg_brier_window": null,
       "pred_resolved_all": 3,
       "avg_brier_all": 0.16000000000000003,
-      "pred_open": 1001
+      "pred_open": 1408
     }
   },
   "generations": [
@@ -110,7 +110,7 @@
   "predictions": {
     "summary": {
       "resolved": 3,
-      "open": 1001,
+      "open": 1408,
       "expired": 0,
       "mean_brier": 0.16,
       "calibration": 0.84,
@@ -154,354 +154,354 @@
     ],
     "open_recent": [
       {
-        "id": 1004,
-        "statement": "Prowl 将在其公开服务目录中修正 is_up 判据，使返回 402/429 的服务不再被计为宕机",
-        "probability": 0.7,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:58:41+08:00"
-      },
-      {
-        "id": 1003,
-        "statement": "东方新能将在2026-12-25前于巨潮资讯网披露该算力板卡采购合同的金额或交付规模等进一步细节",
-        "probability": 0.55,
-        "resolve_by": "2026-12-25",
-        "created_at": "2026-11-10T06:58:24+08:00"
-      },
-      {
-        "id": 1002,
-        "statement": "基元律动（TokenRhythm）将在2026-12-24前发布NeoHorse-1.5-Flash的正式版或公开基准评测结果",
-        "probability": 0.55,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:58:07+08:00"
-      },
-      {
-        "id": 1001,
-        "statement": "Google 将在 2026-12-24 前就 Gemini 用户数据用于人工标注一事发布官方说明或政策澄清",
-        "probability": 0.55,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:58:02+08:00"
-      },
-      {
-        "id": 1000,
-        "statement": "MCP 项目方将在 2027-01-31 前于官方规范或文档中新增工具不可用状态的区分说明（absent/refused/silent 或等价分类）",
-        "probability": 0.35,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:57:51+08:00"
-      },
-      {
-        "id": 999,
-        "statement": "E-means 项目将在 2026-12-24 前公开可复现的代码或基准测试脚本",
-        "probability": 0.55,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:57:46+08:00"
-      },
-      {
-        "id": 998,
-        "statement": "腾讯将在 2027-04-30 前公开发布开放权重模型 Hy4 或其正式命名版本",
-        "probability": 0.7,
-        "resolve_by": "2027-04-30",
-        "created_at": "2026-11-10T06:57:30+08:00"
-      },
-      {
-        "id": 997,
-        "statement": "字节跳动将在 2026-12-24 前公开宣布 Seedream 5.5 Pro 版上线或开放试用",
-        "probability": 0.55,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:57:23+08:00"
-      },
-      {
-        "id": 996,
-        "statement": "Anthropic 将在2026年12月31日前公开披露该天然气涡轮机交易的供应商或项目选址信息。",
-        "probability": 0.35,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:57:15+08:00"
-      },
-      {
-        "id": 995,
-        "statement": "截至2027-02-01，公开文献中仍不会出现被广泛认可的、能将LLM'获得奖励'与'满足评分者'行为分离的训练环境实验。",
-        "probability": 0.7,
-        "resolve_by": "2027-02-01",
-        "created_at": "2026-11-10T06:57:09+08:00"
-      },
-      {
-        "id": 994,
-        "statement": "Redwood Research将在2026年12月24日前公开发布关于其AI辅助研究脚手架改进或提速评估的更新",
-        "probability": 0.3,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:57:02+08:00"
-      },
-      {
-        "id": 993,
-        "statement": "StockASkill 的 GitHub 仓库（github.com/axjing/stockaskill）在 2026-12-21 前将获得超过 500 个 star",
-        "probability": 0.55,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:56:48+08:00"
-      },
-      {
-        "id": 992,
-        "statement": "截至 2026-12-21，arXiv 上不会出现标题或摘要明确以意图感知缓存（intent-aware caching）为方法、并在 WildChat 或 ShareChat 上报告缓存命中率的新论文",
+        "id": 1411,
+        "statement": "美国主要RTO/ISO将在2027年上半年公布FERC Order 2023集群化互联研究首批结果",
         "probability": 0.6,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:56:32+08:00"
+        "resolve_by": "2027-05-14",
+        "created_at": "2026-11-16T06:45:45+08:00"
       },
       {
-        "id": 991,
-        "statement": "DeepX 将在 2027-01-31 前公开第二代芯片的第三方或客户实测推理基准数据（含参数量与功耗口径）",
-        "probability": 0.4,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:56:18+08:00"
-      },
-      {
-        "id": 990,
-        "statement": "Meta 将在 2026-12-24 前公开 Muse Ember 的模型卡或技术博客，包含参数规模与至少一项基准评测结果",
-        "probability": 0.7,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:56:12+08:00"
-      },
-      {
-        "id": 989,
-        "statement": "OpenAI 将在 2026-12-24 前公开 Control Room 的更多技术细节（如覆盖范围或停止机制说明）",
-        "probability": 0.35,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:56:06+08:00"
-      },
-      {
-        "id": 988,
-        "statement": "截至 2026-12-21，arXiv 上会出现至少一篇引用 TurtLES 基准并提出改进神经算子时间稳定性方法的新论文",
-        "probability": 0.7,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:55:53+08:00"
-      },
-      {
-        "id": 987,
-        "statement": "automl团队将在2027-05-06前于ucr-provenance-audit仓库发布覆盖更多UCR数据集的溯源审计结果更新",
-        "probability": 0.55,
-        "resolve_by": "2027-05-06",
-        "created_at": "2026-11-10T06:55:21+08:00"
-      },
-      {
-        "id": 986,
-        "statement": "SURE 作者团队将在 2026-12-21 前公开 SURE 的代码或项目页面",
-        "probability": 0.55,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:55:03+08:00"
-      },
-      {
-        "id": 985,
-        "statement": "HASA作者团队将在2027-01-31前公开HASA的代码实现（如GitHub仓库或项目主页）",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:54:56+08:00"
-      },
-      {
-        "id": 984,
-        "statement": "Artificial Analysis 公开榜单上 Claude Fable 5.2 的 65 分将在 2026-12-24 前被至少一个其他模型追平或超越",
-        "probability": 0.7,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:54:50+08:00"
-      },
-      {
-        "id": 983,
-        "statement": "Meta 将在 2026-12-24 前公开披露 Muse Ember 在第三方基准（非 Meta 自测）上的独立评测结果或更新版对比数据",
-        "probability": 0.35,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:54:45+08:00"
-      },
-      {
-        "id": 982,
-        "statement": "Anthropic 将在 2026-12-24 前公开确认或否认 Fable 5.2 是否为 Physical Superintelligence 量子计算证明所用的非公开 Anthropic 模型",
-        "probability": 0.3,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:54:38+08:00"
-      },
-      {
-        "id": 981,
-        "statement": "V-STORM 的作者团队将在 2027-01-31 前公开其数据集、基准与源代码",
-        "probability": 0.75,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:54:16+08:00"
-      },
-      {
-        "id": 980,
-        "statement": "截至2027-01-31，arXiv上会出现至少一篇引用arXiv:2611.09568、将辩论衍生偏好数据用于开放式（无可验证检查器）任务对齐的后续论文",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:54:02+08:00"
-      },
-      {
-        "id": 979,
-        "statement": "截至 2026-12-20，arXiv 上会出现至少一篇引用 RelGuard 或 relation-DP 的后续 GraphRAG 隐私论文",
-        "probability": 0.55,
-        "resolve_by": "2026-12-20",
-        "created_at": "2026-11-10T06:53:49+08:00"
-      },
-      {
-        "id": 978,
-        "statement": "HPAI-BSC 将在 2027-04-30 前发布更新版 GLP 或配套解码器，公开报告多轮解码后结构合理性改善的定量结果",
-        "probability": 0.35,
-        "resolve_by": "2027-04-30",
-        "created_at": "2026-11-10T06:53:29+08:00"
-      },
-      {
-        "id": 977,
-        "statement": "OpenAI将在2026-12-24前发布关于Astra隐性低效根因的进一步公开说明或更新报告",
-        "probability": 0.35,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:53:03+08:00"
-      },
-      {
-        "id": 976,
-        "statement": "OpenAI 或 Google 将在 2026-12-24 前发布被公开评测为在编码与创意任务上对标 Claude Fable 5.2 的新前沿模型",
-        "probability": 0.7,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:52:56+08:00"
-      },
-      {
-        "id": 975,
-        "statement": "Meta 将在 2027 年 2 月 1 日前公开说明其 LLDB 加速器插件架构的上游合入状态或至少一家第三方 GPU 厂商的接入情况",
-        "probability": 0.55,
-        "resolve_by": "2027-02-01",
-        "created_at": "2026-11-10T06:52:48+08:00"
-      },
-      {
-        "id": 974,
-        "statement": "NVIDIA 将在 2027-01-31 前发布 Nemotron-Personas 系列中至少一个非日本语言或非金融垂直领域的扩展数据集",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:52:41+08:00"
-      },
-      {
-        "id": 973,
-        "statement": "Google 将在 2026-12-20 前公开说明 Health Guardian 血压趋势功能的上线地区或监管状态",
-        "probability": 0.35,
-        "resolve_by": "2026-12-20",
-        "created_at": "2026-11-10T06:52:33+08:00"
-      },
-      {
-        "id": 972,
-        "statement": "2026-12-31 前，arXiv 上会出现至少一篇引用 Transformer-FSQ 并将 KV 缓存压缩比推进到 100× 以上的后续论文",
+        "id": 1410,
+        "statement": "Moltbook 上关于托管超时决策时钟的讨论线程将在 2026-12-31 前出现后续帖，明确给出沉默超时后的默认处理方案",
         "probability": 0.55,
         "resolve_by": "2026-12-31",
-        "created_at": "2026-11-10T06:52:11+08:00"
+        "created_at": "2026-11-16T06:45:21+08:00"
       },
       {
-        "id": 971,
-        "statement": "RidgeFill 作者或社区将在 2026-12-21 前发布支持至少一种额外模型架构（非 Llama-3.1-8B、Qwen3.5-9B、Qwen3.8-27B、Qwen3.8-Flash-Next）的 RidgeFill 实现或评测结果。",
-        "probability": 0.35,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:52:02+08:00"
-      },
-      {
-        "id": 970,
-        "statement": "QGPM作者会在2026-12-21前于GitHub仓库iZHpy/QGPM发布可运行代码与NoLiMa/RULER复现脚本",
-        "probability": 0.75,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:51:47+08:00"
-      },
-      {
-        "id": 969,
-        "statement": "截至 2027-01-31，arXiv 上会出现至少一篇引用 arXiv 2611.09625 的后续论文，将 TT-MBRL 的测试时梯度记忆方法扩展到 Memory Maze 之外的新环境或新任务",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:51:40+08:00"
-      },
-      {
-        "id": 968,
-        "statement": "sunlitsong 的 ROSE 代码仓库（github.com/sunlitsong/ROSE）将在 2026-12-21 前获得公开可见的提交或 issue 活动",
-        "probability": 0.6,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:51:27+08:00"
-      },
-      {
-        "id": 967,
-        "statement": "到 2027-01-31 前，将出现至少一个公开的、针对 AGENTS.md 或 CLAUDE.md 过期检测或自动修复的开源工具或产品功能",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:51:19+08:00"
-      },
-      {
-        "id": 966,
-        "statement": "OpenBitSys 的 BitDecoding-FP4 仓库（github.com/OpenBitSys/BitDecoding-FP4）将在 2026-12-21 前获得至少一次代码提交或版本更新",
+        "id": 1409,
+        "statement": "CoinGecko AI 板块在 2026-11-16 后 30 天内将出现至少一次单日板块整体下跌（多数代币 24h 为负）",
         "probability": 0.7,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:51:12+08:00"
+        "resolve_by": "2026-12-16",
+        "created_at": "2026-11-16T06:45:00+08:00"
       },
       {
-        "id": 965,
-        "statement": "Anthropic的Claude Fable 5.2将在2026-12-24前被Artificial Analysis Intelligence Index v5最高算力档至少一个已公开发布的竞品模型追平或超越65分",
-        "probability": 0.3,
-        "resolve_by": "2026-12-24",
-        "created_at": "2026-11-10T06:50:56+08:00"
-      },
-      {
-        "id": 964,
-        "statement": "到2027-01-31，arXiv上会出现至少一篇引用arXiv:2611.09454、把适配器恢复技能文档方法扩展到ALFWorld以外任务的工作",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:50:47+08:00"
-      },
-      {
-        "id": 963,
-        "statement": "ZJU-REAL将在2026-12-31前于其GitHub仓库ZJU-REAL/RuACT发布RuACT训练代码的实质性更新（新增脚本、配置或模型权重之一）",
-        "probability": 0.55,
+        "id": 1408,
+        "statement": "Phantasialand 或其母公司将在2026-12-31前公开说明已为泳池等安全关键系统增加邮件以外的告警通道或冗余机制",
+        "probability": 0.35,
         "resolve_by": "2026-12-31",
-        "created_at": "2026-11-10T06:50:38+08:00"
+        "created_at": "2026-11-16T06:44:49+08:00"
       },
       {
-        "id": 962,
-        "statement": "截至 2026-12-21，arXiv 上会出现至少一篇引用 DS-QA 基准或复用其蒙特卡洛重复评测协议的新论文",
-        "probability": 0.55,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:50:29+08:00"
+        "id": 1407,
+        "statement": "美国版权局在2027-05-15前不会发布明确规定纯AI生成代码必须开源或强制CC0的正式规则",
+        "probability": 0.8,
+        "resolve_by": "2027-05-14",
+        "created_at": "2026-11-16T06:44:42+08:00"
       },
       {
-        "id": 961,
-        "statement": "arXiv 论文 Diffusion-free Score Matching for Exact Conditional Sampling（DISCO）在 2027-01-15 前不会被 ICML、NeurIPS 或 ICLR 主会正式接收为 oral 或 spotlight",
-        "probability": 0.3,
+        "id": 1406,
+        "statement": "datasette-llm 在 2026-12-31 前会发布至少一个 0.1a12 或更高版本，继续扩展 LLM 后端或配置能力",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-16T06:44:36+08:00"
+      },
+      {
+        "id": 1405,
+        "statement": "AI Futures Project 在 2027 年前不会公开撤回其'智能爆炸始于 2027 年'的核心估计",
+        "probability": 0.7,
         "resolve_by": "2027-01-15",
-        "created_at": "2026-11-10T06:50:22+08:00"
+        "created_at": "2026-11-16T06:44:21+08:00"
       },
       {
-        "id": 960,
-        "statement": "截至2027-01-31，arXiv上会出现至少一篇引用arXiv:2611.09670、提出无需真实回报oracle的奖励模型校准或搜索温度自适应方法的后续论文",
-        "probability": 0.6,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:50:14+08:00"
+        "id": 1404,
+        "statement": "Moltbook 平台将在 2026-12-29 前出现至少一篇公开讨论 agent 意图漂移检测或重试护栏方案的帖子",
+        "probability": 0.35,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-16T06:44:10+08:00"
       },
       {
-        "id": 959,
-        "statement": "FOSCAR 开源内核库（github.com/FutureMLS-Lab/FOSCAR）将在 2026-12-21 前获得至少一次代码提交或发布更新",
-        "probability": 0.7,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:50:05+08:00"
-      },
-      {
-        "id": 958,
-        "statement": "到 2027-01-31 前，arXiv 上会出现至少一篇引用 arXiv:2611.09803 并复现选项顺序翻转实验的论文",
-        "probability": 0.55,
-        "resolve_by": "2027-01-31",
-        "created_at": "2026-11-10T06:49:56+08:00"
-      },
-      {
-        "id": 957,
-        "statement": "Handshake AI 将在 2026 年 12 月 31 日前公开发布或开放试用至少一个面向企业客户的私有 benchmark 或 RL 环境产品",
+        "id": 1403,
+        "statement": "英伟达将在2026年12月31日前宣布Collette Kress之外的新任正式CEO或明确长期CEO遴选安排",
         "probability": 0.55,
         "resolve_by": "2026-12-31",
-        "created_at": "2026-11-10T06:49:48+08:00"
+        "created_at": "2026-11-16T06:43:58+08:00"
       },
       {
-        "id": 956,
-        "statement": "截至 2026-12-21，arXiv 上会出现至少一篇引用 arXiv:2611.09847 并将计算机使用智能体用于具身任务评测的后续论文。",
+        "id": 1402,
+        "statement": "Abiray/MiniMax-H3-Image-GGUF 在 HuggingFace 的下载量将在 2026-12-10 前超过 200000",
         "probability": 0.7,
-        "resolve_by": "2026-12-21",
-        "created_at": "2026-11-10T06:49:33+08:00"
+        "resolve_by": "2026-12-10",
+        "created_at": "2026-11-16T06:43:42+08:00"
       },
       {
-        "id": 955,
-        "statement": "arxiv-csai 在2026-12-31前不会出现引用并行智能体团队方法并被公开报道的后续论文",
+        "id": 1401,
+        "statement": "ConceptCountry/qwen-concept-27b 在 2026-12-08 前 HuggingFace 点赞数将超过 400",
+        "probability": 0.7,
+        "resolve_by": "2026-12-08",
+        "created_at": "2026-11-16T06:43:24+08:00"
+      },
+      {
+        "id": 1400,
+        "statement": "Anthropic 将在 2026-12-31 前公开 Claude Fable 5.2 绘画方法的更多技术细节或第三方复现结果",
+        "probability": 0.35,
+        "resolve_by": "2026-12-30",
+        "created_at": "2026-11-16T06:43:06+08:00"
+      },
+      {
+        "id": 1399,
+        "statement": "美国商务部将在2027年5月15日前发布替代拜登全球芯片访问规则的最终版东南亚数据中心管制规则",
+        "probability": 0.7,
+        "resolve_by": "2027-05-15",
+        "created_at": "2026-11-16T06:42:59+08:00"
+      },
+      {
+        "id": 1398,
+        "statement": "World Economic Forum将在2030年前发布报告确认全球因AI实现7800万净新增就业岗位。",
+        "probability": 0.65,
+        "resolve_by": "2027-01-15",
+        "created_at": "2026-11-16T06:42:52+08:00"
+      },
+      {
+        "id": 1397,
+        "statement": "美团将在2026年12月31日前公开LongCat-2.5的更多技术细节或训练报告。",
+        "probability": 0.65,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-16T06:42:37+08:00"
+      },
+      {
+        "id": 1396,
+        "statement": "coindesk将在2026-12-31前发表至少一篇进一步报道，具体说明AI数据中心在巴拉圭挤占比特币矿工电力或场地的案例",
+        "probability": 0.35,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:46:55+08:00"
+      },
+      {
+        "id": 1395,
+        "statement": "EFF 将在 2026-12-31 前发布对 Apple、Amazon、Meta、Google 常开录音设备技术隐私差异的深入对比分析",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:46:12+08:00"
+      },
+      {
+        "id": 1394,
+        "statement": "Character.ai的资产或知识产权许可出售将在2026年12月31日前完成交割",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:45:49+08:00"
+      },
+      {
+        "id": 1393,
+        "statement": "截至 2026-12-29，ZeusOS 不会在 Moltbook 该帖或其后续帖子中公开工时节省或续保捕获的具体数字",
+        "probability": 0.7,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:45:38+08:00"
+      },
+      {
+        "id": 1392,
+        "statement": "到 2027-01-31 前，至少一家 agent 支付或钱包运营方将公开推出基于用户预充值余额的收益或利息类产品",
+        "probability": 0.55,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-11-15T06:45:28+08:00"
+      },
+      {
+        "id": 1391,
+        "statement": "Moltbook 将在 2027-01-31 前公开说明或上线针对通知/事件流撤回或更新语义的修复",
         "probability": 0.3,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-11-15T06:45:11+08:00"
+      },
+      {
+        "id": 1390,
+        "statement": "Moltbook 将在 2026-12-29 前发布针对工具结果 schema 自校验问题的修复或校验机制说明",
+        "probability": 0.35,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:45:07+08:00"
+      },
+      {
+        "id": 1389,
+        "statement": "Moltbook 平台在 2026-12-29 前不会公开推出针对 agent 规则改写与行为合规的标准化产物测试或审计功能",
+        "probability": 0.7,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:44:57+08:00"
+      },
+      {
+        "id": 1388,
+        "statement": "Agweb 的 GitHub 仓库 paul-nameless/agweb 在 2026-12-14 前 star 数将超过 500",
+        "probability": 0.35,
+        "resolve_by": "2026-12-14",
+        "created_at": "2026-11-15T06:44:52+08:00"
+      },
+      {
+        "id": 1387,
+        "statement": "TechCrunch将在2026年12月31日前发布报道，援引数据或消息人士称黄仁勋离任后英伟达对AI初创公司的投资节奏放缓或金额下降。",
+        "probability": 0.55,
         "resolve_by": "2026-12-31",
-        "created_at": "2026-11-10T06:49:19+08:00"
+        "created_at": "2026-11-15T06:44:47+08:00"
+      },
+      {
+        "id": 1386,
+        "statement": "DeepSeek 将在 2026-12-31 前公布全家桶 API 的具体功能清单与定价页面",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:44:37+08:00"
+      },
+      {
+        "id": 1385,
+        "statement": "Edge0-145B-NVFP4 在 HuggingFace 的下载量将在 2026-12-26 前突破 60000",
+        "probability": 0.55,
+        "resolve_by": "2026-12-26",
+        "created_at": "2026-11-15T06:44:33+08:00"
+      },
+      {
+        "id": 1384,
+        "statement": "截至2026-12-31，Anthropic未公开确认Mythos模型的存在或其重训算力数据",
+        "probability": 0.7,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:44:25+08:00"
+      },
+      {
+        "id": 1383,
+        "statement": "百度 ERNIE 5.5 Flash Preview 将于 2026-11-25 前发布开放权重",
+        "probability": 0.7,
+        "resolve_by": "2026-11-25",
+        "created_at": "2026-11-15T06:44:19+08:00"
+      },
+      {
+        "id": 1382,
+        "statement": "higurashi-ai/Haru-4B 在 2026-12-27 前 HuggingFace 下载量将超过 5000",
+        "probability": 0.55,
+        "resolve_by": "2026-12-27",
+        "created_at": "2026-11-15T06:44:13+08:00"
+      },
+      {
+        "id": 1381,
+        "statement": "Anthropic 将在 2026-12-31 前公开或更新 Claude Opus 5.5 的官方提示指南，明确建议移除“think hard”类措辞",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:44:08+08:00"
+      },
+      {
+        "id": 1380,
+        "statement": "deepseek-v3-jax 仓库将在2026-12-29前获得超过500个GitHub Star",
+        "probability": 0.35,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:43:56+08:00"
+      },
+      {
+        "id": 1379,
+        "statement": "OpenAI在2026年12月31日前不会公开宣布重建独立机器人团队",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:43:51+08:00"
+      },
+      {
+        "id": 1378,
+        "statement": "the-decoder 在 2026-12-29 前会再发布至少一篇报道，涉及 Gemini 4 Carbon 或 GPT-6.1 Sol 在 MathArena 或其他公开基准上的排名或成本对比更新",
+        "probability": 0.7,
+        "resolve_by": "2026-12-29",
+        "created_at": "2026-11-15T06:43:47+08:00"
+      },
+      {
+        "id": 1377,
+        "statement": "aisafety-cn.com团队将在2026-12-31前公开发布至少一份关于RL环境reward hacking失效模式的报告",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:43:41+08:00"
+      },
+      {
+        "id": 1376,
+        "statement": "meituan-longcat/LongCat-2.5 在 2026-12-19 前 HuggingFace 点赞数将超过 500",
+        "probability": 0.55,
+        "resolve_by": "2026-12-19",
+        "created_at": "2026-11-15T06:43:35+08:00"
+      },
+      {
+        "id": 1375,
+        "statement": "到 2026-12-22，adventists-ai/Sophon-Realtime-v1 在 HuggingFace 页面的下载量将高于 0",
+        "probability": 0.75,
+        "resolve_by": "2026-12-22",
+        "created_at": "2026-11-15T06:43:30+08:00"
+      },
+      {
+        "id": 1374,
+        "statement": "Lovable 将在 2026-12-31 前公开回应本次调查，并宣布针对 Supabase 集成的默认权限或安全提示改进措施",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:43:25+08:00"
+      },
+      {
+        "id": 1373,
+        "statement": "Anthropic的IPO将于2026年11月19日前后完成，募资总额（含私募配售）接近或达到900亿美元量级",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:43:18+08:00"
+      },
+      {
+        "id": 1372,
+        "statement": "Goodfire未在2026-12-31前公开发布其神经元可解释性研究所用提示与文档数据集",
+        "probability": 0.7,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:43:12+08:00"
+      },
+      {
+        "id": 1371,
+        "statement": "arxiv 上将在 2027-01-31 前出现至少一篇引用 S1-Evo 并针对类型化 System-1 决策模型提出防御或评测方法的论文。",
+        "probability": 0.7,
+        "resolve_by": "2027-01-31",
+        "created_at": "2026-11-15T06:43:05+08:00"
+      },
+      {
+        "id": 1370,
+        "statement": "UniPat AI将在2026年12月31日前发布SPU后续评测结果，纳入至少一款新模型或新配置。",
+        "probability": 0.65,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:42:58+08:00"
+      },
+      {
+        "id": 1369,
+        "statement": "Runway将在2026年12月31日前发布Praxis-1的后续版本或更新，以改进复杂动作序列规划能力",
+        "probability": 0.35,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:42:48+08:00"
+      },
+      {
+        "id": 1368,
+        "statement": "Anthropic将在2026年12月31日前公开其原始精神极乐吸引子实验的系统提示或完整方法论文档",
+        "probability": 0.35,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-15T06:42:41+08:00"
+      },
+      {
+        "id": 1367,
+        "statement": "osai2026 将在 Moltbook 上交付其承诺的 deadline-aware 分层降级中间件实现（含超时处理与降级路由 schema）",
+        "probability": 0.35,
+        "resolve_by": "2026-12-28",
+        "created_at": "2026-11-14T06:59:52+08:00"
+      },
+      {
+        "id": 1366,
+        "statement": "Anthropic股票将于2026年11月18日定价并在Nasdaq以代码ANT开始交易",
+        "probability": 0.8,
+        "resolve_by": "2026-12-05",
+        "created_at": "2026-11-14T06:59:26+08:00"
+      },
+      {
+        "id": 1365,
+        "statement": "百度词元所将在2026年12月底前公开披露入驻模型供应商数量较上线一个月时的100个以上进一步增长",
+        "probability": 0.7,
+        "resolve_by": "2026-12-28",
+        "created_at": "2026-11-14T06:58:49+08:00"
+      },
+      {
+        "id": 1364,
+        "statement": "Crunchbase News 在 2026-12-31 前发布的后续周度融资盘点中，仍会将智能体AI或AI基础设施列为当周重点融资方向之一",
+        "probability": 0.75,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-14T06:58:43+08:00"
+      },
+      {
+        "id": 1363,
+        "statement": "Crunchbase News 将在2026年12月31日前发布后续报道，披露英伟达及NVentures在2026年的具体投资笔数或金额数据",
+        "probability": 0.55,
+        "resolve_by": "2026-12-31",
+        "created_at": "2026-11-14T06:58:38+08:00"
+      },
+      {
+        "id": 1362,
+        "statement": "Moltbook 平台在 2026-12-28 前不会公开修复深度 5 以下回复无法通过树遍历找到的问题",
+        "probability": 0.7,
+        "resolve_by": "2026-12-28",
+        "created_at": "2026-11-14T06:58:20+08:00"
       }
     ]
   }
